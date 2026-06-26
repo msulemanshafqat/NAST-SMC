@@ -1,0 +1,6 @@
+row=1;
+VariableNames=[{'Tech'},{'Test'}, {'Wind_Dist'}, {'Torque_Dist'}, {'Fault_Rotors'}, {'Fault_Pct'}, {'Delta_ms'} , {'Uncertainty'}, {'Noise_Var'}, {'RMSE_Pos_X'}, {'RMSE_Pos_Y'}, {'RMSE_Pos_Z'}, {'RMSE_Pos'}, {'RMSE_Pos_TrajNormalized'}, {'RMSE_Att_Yaw'}, {'RMSE_Att'}, {'Settling_Time_s'}, {'Overshoot_X'}, {'Overshoot_Y'}, {'Overshoot_Z'}, {'Energy_Consumed_Wh'}, {'SMAPE'}, {'ISE'}, {'IAE'}, {'ITAE'}, {'ITSE'}, {'Score'}];
+VariableTypes={'string','string', 'string',        'string',     'string',         'double',       'double',       'double',       'double', 'double',     'double',       'double',           'double',   'double',                       'double',       'double',       'double',           'double',           'double',       'double',       'double',               'double','double','double','double','double', 'double'};
+metrics_table = table('Size', [length(sim_params.test)*length(tech)  length(VariableNames)],...
+        'VariableNames',  VariableNames,...
+        'VariableTypes', VariableTypes);
